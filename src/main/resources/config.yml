@@ -1,0 +1,26 @@
+settings:
+  session-timeout: 60
+  max-login-attempts: 3
+  min-password-length: 6
+  debug: true 
+
+geoip:
+  enabled: false
+  blocked-countries:
+    - "RU"
+    - "CN"
+
+database:
+  connection-pool-size: 10
+  timeout: 30000
+  max-lifetime: 1800000
+  
+security:
+  max-attempts: 5
+  cooldown-minutes: 30
+  session-timeout: 3600
+  max-concurrent-sessions: 1 
+
+web-server:
+  enabled: true
+  port: 8099 

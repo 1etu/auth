@@ -1,0 +1,27 @@
+name: auth
+version: '1.0.0'
+main: net.hywave.auth.Auth
+api-version: '1.13'
+authors: [rubidium]
+description: Authentication system for Hywave Network
+commands:
+  login:
+    description: Login to your account
+    usage: /login <password>
+  register:
+    description: Register a new account
+    usage: /register <password>
+  backupcode:
+    description: Open backup code entry GUI
+    usage: /backupcode
+  setup2fa:
+    description: Setup Two-Factor Authentication
+    usage: /setup2fa
+  lockdown:
+    description: Control emergency lockdown
+    usage: /lockdown <activate|deactivate> [reason]
+    permission: auth.admin.lockdown
+  authstats:
+    description: Open authentication statistics GUI
+    usage: /authstats
+    permission: auth.admin.stats
